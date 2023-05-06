@@ -23,7 +23,15 @@ namespace ZadanieDomowe_T3_21
             Console.WriteLine("W ktorym roku sie urodziles?");
 
             var dateOfBirth = int.Parse(Console.ReadLine());
-            var wynik = 2023 - dateOfBirth;
+            if(dateOfBirth > 1920 )
+            {
+                var wynik = 2023 - dateOfBirth;
+            }
+            else
+            {
+                Console.WriteLine("Niemozliwe!");
+            }
+
 
             Console.WriteLine($"Masz na imie {Imie} i mieszkasz w {Miejscowosc} oraz masz {wynik} lat.");
 
